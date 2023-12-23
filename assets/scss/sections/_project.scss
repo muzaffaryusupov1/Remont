@@ -1,0 +1,448 @@
+/* PROJECT - START */
+
+.project{
+    margin: 100px 0;
+    &__header{
+        @extend %flex-center;
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 690px) {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        &__content{
+            @extend %flex-center;
+            gap: 24px;
+            margin-right: 30px;
+            @media screen and (max-width: 768px) {
+                align-items: center;
+                gap: 19px;
+            }
+            @media screen and (max-width: 690px) {
+                align-items: center;
+                gap: 5px;
+                margin-top: 10px;
+            }
+        }
+        &__content1{
+            @extend %flex-center;
+            gap: 24px;
+            @media screen and (max-width: 768px) {
+                align-items: center;
+                gap: 19px;
+            }
+            @media screen and (max-width: 690px) {
+                align-items: center;
+                gap: 5px;
+                margin-top: 20px;
+            }
+        }
+
+        &__title{
+            width: 50%;
+            color: $block-text-color;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 123.81%;
+            margin-right: 90px;
+            @media screen and (max-width: 950px) {
+                font-size: 38px;
+                margin-right: 10px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+            }
+            @media screen and (max-width: 690px) {
+                width: 100%;
+                font-size: 28px;
+            }
+        }
+
+        &__number{
+            color: $block-right-color;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 100%;
+            @media screen and (max-width: 950px) {
+                font-size: 38px;
+            }
+
+            @media screen and (max-width: 690px) {
+                font-size: 30px;
+            }
+        }
+
+        &__number2{
+            width: 179px;
+            color: $block-right-color;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 100%;
+            @media screen and (max-width: 950px) {
+                width: 100px;
+                font-size: 30px;
+            }
+            @media screen and (max-width: 950px) {
+                font-size: 30px;
+            }
+        }
+
+        &__subtitle{
+            color: $link-color;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 129.412%;
+            @media screen and (max-width: 950px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__banner{
+        flex-wrap: wrap;
+        &__row{
+            display: flex;
+            gap: 20px;
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+            }
+        }
+
+        &_contents{
+            height: 500px;
+            background: url(/images/product-card-mage.png);
+            background-repeat: no-repeat;
+            border-radius: 40px;
+            position: relative;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                background: url(/images/product-mobile-png.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                border-radius: 40px;
+            }
+
+            @media screen and (max-width: 400px) {
+                height: 160px;
+                background-size: contain;
+            }
+
+            @media screen and (max-width: 300px) {
+                height: 140px;
+                background-size: contain;
+            }
+
+            &_row{
+                position: absolute;
+                bottom: 25px;
+                right: 38.3%;
+
+                & a svg{
+                    @media screen and (max-width: 600px) {
+                        width: 40px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        width: 30px;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    right: 34%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    right: 30%;
+                }
+
+                @media screen and (max-width: 500px) {
+                    right: 25%;
+                }
+
+                @media screen and (max-width: 400px) {
+                    gap: 5px;
+                }
+
+                &_img{
+                    @media screen and (max-width: 768px) {
+                        width: 30px;
+                    }
+                }
+            }
+
+
+            &__btn{
+                position: absolute;
+                bottom: 25px;
+                right: 20px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    svg {
+                        circle{
+                            fill: $product-btn-color;
+                        }
+
+                        path{
+                            fill: $white-color;
+                        }
+                    }
+                }
+
+
+                & svg{
+                    @media screen and (max-width: 768px) {
+                        width: 70px;
+                        height: 70px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        width: 56px;
+                        height: 56px;
+                    }
+    
+                    @media screen and (max-width: 500px) {
+                        width: 48px;
+                        height: 48px;
+                    }
+    
+                    @media screen and (max-width: 400px) {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+                
+            }
+
+            &__btncontent{
+                width: 74px;
+                height: 74px;
+                border-radius: 50%;
+                background: url(/images/Ellipse\ 212.png);
+                position: absolute;
+                top: 25px;
+                right: 20px;
+                transition: all ease-in-out;
+
+                @media screen and (max-width: 600px) {
+                    width: 54px;
+                    height: 54px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                &:hover{
+                    background: $block-right-color;
+                }
+
+                &_title{
+                    color: $white-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 100%;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 13px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        font-size: 10px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 9px;
+                    }
+                }
+            }
+            }
+        &__row-left{
+            position: relative;
+            width: 400px;
+            height: 480px;
+            margin-top: 20px;
+            background: url(/images/product\ -image.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 40px;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                background: url(/images/product\ -image.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            &-wrap{
+                position: absolute;
+                bottom: 23px;
+                left: 25%;
+            }
+
+            &-btn{
+                width: 74px;
+                height: 74px;
+                border-radius: 50%;
+                background: url(/images/Ellipse\ 212.png);
+                position: absolute;
+                top: 25px;
+                right: 20px;
+                transition: all ease-in-out;
+                &:hover{
+                    background: $block-right-color;
+                }
+
+                &-title{
+                    color: $white-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 100%;
+                }
+            }
+
+        }
+
+        &__row-right{
+            flex-grow: 1;
+            height: 480px;
+            position: relative;
+            margin-top: 20px;
+            background: url(/images/product-right-img.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 40px;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                background: url(/images/product-mobile-png.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                border-radius: 40px;
+            }
+            
+            @media screen and (max-width: 400px) {
+                height: 220px;
+                background-size: contain;
+            }
+
+            &-wrap{
+                position: absolute;
+                bottom: 25px;
+                left: 38%;
+
+                & svg{
+                    @media screen and (max-width: 768px) {
+                        width: 70px;
+                        height: 70px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        width: 56px;
+                        height: 56px;
+                    }
+    
+                    @media screen and (max-width: 500px) {
+                        width: 48px;
+                        height: 48px;
+                    }
+    
+                    @media screen and (max-width: 400px) {
+                        width: 38px;
+                        height: 38px;
+                    }
+                }
+
+                & a svg{
+                    @media screen and (max-width: 600px) {
+                        width: 40px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        width: 30px;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    right: 34%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    right: 30%;
+                }
+
+                @media screen and (max-width: 500px) {
+                    right: 15%;
+                }
+
+                @media screen and (max-width: 400px) {
+                    gap: 5px;
+                }
+
+                &_img{
+                    @media screen and (max-width: 768px) {
+                        width: 30px;
+                    }
+                }
+            }
+
+            &-btn{
+                width: 74px;
+                height: 74px;
+                border-radius: 50%;
+                background: url(/images/Ellipse-product.png);
+                position: absolute;
+                top: 25px;
+                right: 20px;
+                transition: all ease-in-out;
+                    &:hover{
+                        background: $product-btn-color;
+                    }
+
+                &-title{
+                    color: $white-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 100%;
+                }
+            } 
+        }
+    }
+
+    &__btns{
+        @extend %flex-center-center;
+        margin-top: 57px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 20px;
+        background-color: $block-right-color;
+        border-radius: 60px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            background-color: $product-btn-color;
+        }
+
+        &-title{
+            color: $white-color;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 184.615%;
+            letter-spacing: 0.52px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+/* PROJECT - END */

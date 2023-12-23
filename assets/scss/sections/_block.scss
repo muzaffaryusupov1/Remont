@@ -1,0 +1,319 @@
+/* BLOCK - START */
+
+.block{
+    margin: 28px 0;
+    &__wrap{
+        display: flex;
+        gap: 20px;
+            @media screen and (max-width: 1200px) {
+                overflow-x: scroll;
+            }
+    }
+
+    &__left{
+        position: relative;
+        border-radius: 40px;
+        background-color: $block-one;
+        padding: 60px 27px 0 37px;
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
+
+        &__title{
+            color: $block-text-color;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 136.842%;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 1100px) {
+                width: 700px;
+            }
+
+            @media screen and (max-width: 1000px) {
+                width: 600px;
+                font-size: 26px;
+                margin-bottom: 17px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 450px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 340px;
+            }
+
+            @media screen and (max-width: 400px) {
+                width: 300px;
+                font-size: 26px;
+            }
+
+        }
+        &__subtitle{
+            color: $block-subtitle-color;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 175%;
+            margin-bottom: 38px;
+            position: relative;
+            z-index: 2;
+            @media screen and (max-width: 900px) {
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 14px;
+            }
+        }
+
+        &__btn{
+            position: relative;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-radius: 60px;
+            background-color: $block-btn;
+            padding: 30px 36px;
+            z-index: 2;
+            transition: all 0.2s ease-in-out;
+
+            @media screen and (max-width: 600px) {
+                gap: 9px;
+                padding: 24px 24px;
+            }
+            @media screen and (max-width: 400px) {
+                width: 250px;
+                gap: 6px;
+            }
+            &:hover{
+                fill: $black-color;
+                color: $black-color;
+                background-color: $white-color;
+            }
+            &:hover a{
+                color: $black-color;
+            }
+            &:hover path{
+                fill: $black-color;
+            }
+            &:active{
+                background-color: $block-orange-color;
+            }
+            &:active a{
+                color: $black-color;
+            }
+            &:active path{
+                fill: $black-color;
+            }
+            &_title{
+                color: $white-color;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-weight: 800;
+                line-height: 184.615%;
+                letter-spacing: 0.52px;
+                text-transform: uppercase;
+                @media screen and (max-width: 768px) {
+                    font-size: 10px;
+                }
+            }
+        }
+        &__img{
+            width: 412.541px;
+            height: 241.888px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+
+            @media screen and (max-width: 1100px) {
+                width: 253px;
+                height: 148.343px;
+            }
+
+
+            @media screen and (max-width: 370px) {
+                width: 200px;
+                height: 100px;
+            }
+        }
+        &__svg__mobile{
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+                position: absolute;
+                bottom: 14px;
+            }
+        }
+    }
+    &__right{
+        flex: 1 1 auto;
+        &__row{
+            @extend %flex-center;
+            gap: 20px;
+        }
+        &__cards_one{
+            padding: 48px 152px 48px 30px;
+            border-radius: 40px;
+            background-color: $block-right-color;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+
+            &__content{
+                @extend %flex-center;
+                gap: 16px;
+                @media screen and (max-width: 500px) {
+                    gap: 10px;
+                }
+            }
+
+            &__title{
+                color: $white-color;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 160%;
+                margin-bottom: 38px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 17px;
+                    width: 300px;
+                }
+            }
+
+            &__btn{
+                @extend %flex-center;
+                gap: 19px;
+                border-radius: 60px;
+                background-color: $white-color;
+                padding: 13px 14px 13px 26px;
+                transition: all 0.2s ease-in-out;
+
+                @media screen and (max-width: 500px) {
+                    gap: 10px;
+                    padding: 9px 10px 11px 20px;
+                }
+
+                &:hover{
+                    background-color: $block-btn;
+                }
+                &:hover a{
+                    color: $white-color;
+                }
+
+                &:active{
+                    background-color: $white-color;
+                }
+                &:active a{
+                    color: $black-color;
+                }
+               
+
+                &__title{
+                    color: $block-text-color;
+                    font-family: Montserrat;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 184.615%;
+                    letter-spacing: 0.52px;
+                    text-transform: uppercase;
+                }
+            }
+            &__sales-title{
+                color: $block-orange-color;
+                font-family: Montserrat;
+                font-size: 53px;
+                font-weight: 800;
+                line-height: 90.566%;
+                
+                @media screen and (max-width: 500px) {
+                    font-size: 33px;
+                }
+            }
+
+            &__image{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        &__cards_two{
+            width: 305px;
+            height: 270px;
+            border-radius: 40px;
+            padding: 65px 11px 66px 30px;
+            background: url(/images/Group\ 84584.png);
+
+            @media screen and (max-width: 1000px) {
+                width: 280px;
+            }
+
+            @media screen and (max-width: 900px) {
+                width: 260px;
+            }
+
+            &__title{
+                color: $white-color;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 130.769%;
+                margin-bottom: 9px;
+                @media screen and (max-width: 900px) {
+                    font-size: 23px;
+                }
+            }
+
+            &__subtitle{
+                color: $white-color;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 175%;
+                @media screen and (max-width: 900px) {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &__cards_three{
+            width: 305px;
+            height: 270px;
+            padding: 62px 30px 62px 117px;
+            background: url(/images/block__right__cards_three-img.png);
+            @media screen and (max-width: 1000px) {
+                width: 280px;
+            }
+            &__title{
+                color: $block-text-color;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 126.667%;
+                margin-bottom: 22px;
+                @media screen and (max-width: 1000px) {
+                    font-size: 27px;
+                }
+            }
+
+            &__subtitle{
+                color: $block-right-color;
+                font-family: Montserrat;
+                font-size: 50px;
+                font-weight: 800;
+                line-height: 96%;
+                margin-left: 24px;
+                @media screen and (max-width: 1000px) {
+                    font-size: 38px;
+                }
+            }
+        }
+       
+    }
+}
+
+
+/* BLOCK - END */

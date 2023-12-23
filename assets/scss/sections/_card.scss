@@ -1,0 +1,513 @@
+/* CARD - START */
+
+.card{
+    &__header{
+        display: flex;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            height: 160px;
+        }
+
+        @media screen and (max-width: 800px) {
+            height: 190px;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 250px;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 300px;
+        }
+
+        &__titles{
+            margin-right: 90px;
+            @media screen and (max-width: 700px) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 0;
+            }
+        }
+        &__title{
+            color: $block-text-color;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 123.81%;
+
+            @media screen and (max-width: 700px) {
+                font-size: 38px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 28px;
+            }
+        }
+
+        &__subtitle{
+            color: $block-text-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        &__link{
+            color: $block-right-color;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 175%;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        &__images{
+            width: 335px;
+            display: flex;
+            position: relative;
+
+            & img{
+                @media screen and (max-width: 600px) {
+                    width: 98px;
+                    height: 98px;
+                }
+        
+                @media screen and (max-width: 500px) {
+                    width: 89px;
+                    height: 89px;
+                }
+            }
+            &_img{
+                position: absolute;
+                left: 0;
+                z-index: 3;
+            }
+            &_img1{
+                position: absolute;
+                left: 75px;
+                z-index: 2;
+
+                @media screen and (max-width: 600px) {
+                    left: 70px;
+                }
+        
+                @media screen and (max-width: 400px) {
+                    left: 50px;
+                }
+            }
+
+            &_img2{
+                position: absolute;
+                right: 70px;
+                z-index: 1;
+
+                @media screen and (max-width: 600px) {
+                    left: 90px;
+                }
+        
+                @media screen and (max-width: 400px) {
+                    left: 100px;
+                }
+            }
+
+            &_img3{
+                position: absolute;
+                right: 0;
+
+                @media screen and (max-width: 600px) {
+                    left: 140px;
+                }
+        
+                @media screen and (max-width: 400px) {
+                    left: 150px;
+                }
+            }
+        }
+    }
+
+    &__content{
+        display: flex;
+        margin-top: 64px;
+        gap: 20px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+        &__one{
+            flex-grow: 1;
+            height: 331px;
+            background-color: $card-one-color;
+            border-radius: 40px;
+            padding: 58px 0 0 51px;
+            position: relative;
+            overflow: hidden;
+
+            &__title{
+                position: relative;
+                color: $block-text-color;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 131.25%;
+                margin-bottom: 11px;
+                
+                @media screen and (max-width: 1000px) {
+                    font-size: 27px;
+                    z-index: 1;
+                }
+
+                @media screen and (max-width: 700px) {
+                    font-size: 28px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 275px;
+                    font-size: 22px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 19px;
+                }
+            }
+
+            &__subtitle{
+                position: relative;
+                width: 362px;
+                color: $block-text-color;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+
+                @media screen and (max-width: 1000px) {
+                    z-index: 2;
+                }
+
+                @media screen and (max-width: 700px) {
+                    font-size: 14px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 305px;
+                    font-size: 13px;
+                }
+            }
+
+            &__btn{
+                position: absolute;
+                bottom: 30px;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    svg {
+                        circle{
+                            fill: $block-right-color;
+                        }
+
+                        path{
+                            fill: $white-color;
+                        }
+                    }
+                }
+                & svg{
+                    @media screen and (max-width: 700px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        width: 41px;
+                        height: 41px;
+                    }
+    
+                    @media screen and (max-width: 500px) {
+                        width: 37px;
+                        height: 37px;
+                    }
+                }
+            }
+            
+            &__img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                @media screen and (max-width: 1000px) {
+                    width: 280px;
+                    height: 216px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    width: 330px;
+                    height: 300px;
+                }
+
+                @media screen and (max-width: 700px) {
+                    width: 280px;
+                    height: 216px;
+                }
+
+                @media screen and (max-width: 700px) {
+                    width: 250px;
+                    height: 190px;
+                }
+            }
+        }
+
+        &__two{
+            position: relative;
+            height: 330px;
+            background: url(/images/group-card-image2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 40px;
+            padding: 58px 0 0 51px;
+
+            &__title{
+                color: $block-text-color;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 131.25%;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 28px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 22px;
+                }
+            }
+
+            &__btn{
+                position: absolute;
+                bottom: 30px;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    svg {
+                        circle{
+                            fill: $block-right-color;
+                        }
+
+                        path{
+                            fill: $white-color;
+                        }
+                    }
+                }
+
+                & svg{
+                    @media screen and (max-width: 700px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        width: 41px;
+                        height: 41px;
+                    }
+    
+                    @media screen and (max-width: 500px) {
+                        width: 37px;
+                        height: 37px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        margin-top: 20px;
+        gap: 21px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+        &__one{
+            position: relative;
+            flex-grow: 1;
+            height: 330px;
+            padding: 58px 0 0 51px;
+            border-radius: 40px;
+            background: url(/images/card-bottom-left-image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            &__title{
+                color: $block-text-color;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 131.25%;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 28px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 22px;
+                }
+            }
+
+            &__btn{
+                position: absolute;
+                bottom: 30px;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    svg {
+                        circle{
+                            fill: $block-right-color;
+                        }
+
+                        path{
+                            fill: $white-color;
+                        }
+                    }
+                }
+
+                & svg{
+                    @media screen and (max-width: 700px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        width: 41px;
+                        height: 41px;
+                    }
+    
+                    @media screen and (max-width: 500px) {
+                        width: 37px;
+                        height: 37px;
+                    }
+                }
+            }
+        }
+
+
+        &__two{
+            position: relative;
+            flex-grow: 1;
+            height: 330px;
+            border-radius: 40px;
+            padding: 58px 0 0 51px;
+            background-color: $card-bottom-color;
+            overflow: hidden;
+
+            &__title{
+                color: $block-text-color;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 131.25%;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 27px;
+                    z-index: 1;
+                }
+
+                @media screen and (max-width: 700px) {
+                    font-size: 28px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 275px;
+                    font-size: 22px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 19px;
+                }
+            }
+
+            &__subtitle{
+                width: 362px;
+                color: $block-text-color;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 175%;
+
+                @media screen and (max-width: 1000px) {
+                    z-index: 2;
+                }
+
+                @media screen and (max-width: 700px) {
+                    font-size: 14px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 305px;
+                    font-size: 13px;
+                }
+            }
+
+            &__btn{
+                position: absolute;
+                bottom: 30px;
+                &:hover{
+                    svg {
+                        circle{
+                            fill: $block-right-color;
+                        }
+                        path{
+                            fill: $white-color;
+                        }
+                    }
+                }
+                
+
+                & svg{
+                    @media screen and (max-width: 700px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        width: 41px;
+                        height: 41px;
+                    }
+    
+                    @media screen and (max-width: 500px) {
+                        width: 37px;
+                        height: 37px;
+                    }
+                }
+            }
+
+            &__img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                @media screen and (max-width: 1000px) {
+                    width: 280px;
+                    height: 216px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    width: 330px;
+                    height: 300px;
+                }
+
+                @media screen and (max-width: 700px) {
+                    width: 280px;
+                    height: 216px;
+                }
+
+                @media screen and (max-width: 700px) {
+                    width: 250px;
+                    height: 190px;
+                }
+            }
+        }
+    }
+}
+
+/* CARD - END */

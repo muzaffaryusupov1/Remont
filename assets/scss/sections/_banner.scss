@@ -1,0 +1,372 @@
+/* BANNER - STRART */
+
+.banner{
+    margin: 66px 0;
+    &__header{
+        @extend %flex-center-center;
+        flex-direction: column;
+
+        &__texts{
+            width: 990px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        &__title{
+            width: 980px;
+            margin-bottom: 21px;
+            color: $block-text-color;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 123.81%;
+
+            @media screen and (max-width: 900px) {
+                width: 600px;
+            }
+
+            @media screen and (max-width: 700px) {
+                margin: 10px;
+                width: 500px;
+                font-size: 39px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 343px;
+                font-size: 24px;
+            }
+        }
+
+        &__link{
+            color: $block-right-color;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 52px;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: 900px) {
+                width: 600px;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 500px;
+                font-size: 39px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 343px;
+                font-size: 22px;
+            }
+        }
+
+        &__subtitle{
+            width: 750px;
+            color: $block-text-color;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 175%;
+
+            @media screen and (max-width: 900px) {
+                width: 600px;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 500px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 380px;
+                font-size: 13px;
+            }
+        }
+
+        &__images{
+            width: 740px;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                width: 600px;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 530px;
+                margin-bottom: 50px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 450px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 345px;
+            }
+
+            &__content{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: $white-color;
+                box-shadow: 2px 3px 27px 4px rgba(34, 60, 80, 0.09);
+                @extend %flex-center-center;
+
+                &__number{
+                    color: $block-right-color;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 200%;
+                }
+            }
+
+            &__title{
+                color: $block-text-color;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 175%;
+                margin-right: 16px;
+
+                @media screen and (max-width: 768px) {
+                    margin-right: 9px;
+                    font-size: 13px;
+                }
+            }
+
+            &__subtitle{
+                color: $block-text-color;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 175%;
+                margin-left: 16px;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 12px;
+                }
+            }
+
+            &__line{
+                width: 280px;
+                height: 14px;
+                border-radius: 40px;
+                background-color: $block-right-color;
+
+                @media screen and (max-width: 768px) {
+                    width: 240px;
+                }
+    
+                @media screen and (max-width: 700px) {
+                    width: 215px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 160px;
+                }
+            }
+
+            &__line2{
+                width: 250px;
+                height: 14px;
+                border-radius: 40px;
+                background-color: $line-color;
+
+                @media screen and (max-width: 768px) {
+                    width: 240px;
+                }
+    
+                @media screen and (max-width: 700px) {
+                    width: 215px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 160px;
+                }
+            }
+        }
+    }
+
+    &__content{
+        display: flex;
+        gap: 16px;
+
+        @media screen and (max-width: 1100px) {
+            overflow-x: scroll;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin: 60px 0;
+        }
+        &__card{
+            width: 290px;
+            height: 360px;
+            background: url(/images/Group\ 3801\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            padding: 40px 91px 36px 31px;
+
+            &__title{
+                color: $white-color;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 158.333%;
+                margin-bottom: 10px;
+            }
+
+            &__btn{
+                border-radius: 60px;
+                border: 1px solid rgba(119, 140, 235, 0.20);
+                background: $block-right-color;
+                padding: 4px 10px;
+                margin-right: 20px;
+                color: $white-color;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 184.615%;
+                letter-spacing: 0.52px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: $white-color;
+                    color: $block-right-color;
+                }
+
+            }
+        }
+
+        &__card1{
+            width: 290px;
+            height: 360px;
+            background: url(/images/Group\ 3801.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 40px 91px 36px 31px;
+
+            &__title{
+                width: 238px;
+                color: $white-color;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 158.333%;
+                margin-bottom: 10px;
+            }
+
+            &__btn{
+                border-radius: 60px;
+                border: 1px solid rgba(119, 140, 235, 0.20);
+                background: $block-right-color;
+                padding: 4px 10px;
+                margin-right: 20px;
+                color: $white-color;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 184.615%;
+                letter-spacing: 0.52px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: $white-color;
+                    color: $block-right-color;
+                }
+
+            }
+        }
+
+        &__card2{
+            width: 290px;
+            height: 360px;
+            background: url(/images/Group\ 3801-1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 40px 91px 36px 31px;
+
+            &__title{
+                width: 238px;
+                color: $white-color;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 158.333%;
+                margin-bottom: 10px;
+            }
+
+            &__btn{
+                border-radius: 60px;
+                border: 1px solid rgba(119, 140, 235, 0.20);
+                background: $block-right-color;
+                padding: 4px 10px;
+                margin-right: 20px;
+                color: $white-color;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 184.615%;
+                letter-spacing: 0.52px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: $white-color;
+                    color: $block-right-color;
+                }
+
+            }
+        }
+
+        &__card3{
+            width: 290px;
+            height: 360px;
+            background: url(/images/Group\ 3801-2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 40px 91px 36px 31px;
+
+            &__title{
+                width: 238px;
+                color: $white-color;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 158.333%;
+                margin-bottom: 10px;
+            }
+
+            &__btn{
+                border-radius: 60px;
+                border: 1px solid rgba(119, 140, 235, 0.20);
+                background: $block-right-color;
+                padding: 4px 10px;
+                margin-right: 20px;
+                color: $white-color;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 184.615%;
+                letter-spacing: 0.52px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: $white-color;
+                    color: $block-right-color;
+                }
+
+            }
+        }
+    }
+}
+
+/* BANNER - END */
