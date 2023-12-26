@@ -1,0 +1,156 @@
+/* ELEMENT - START */
+
+.element{
+    margin: 60px 0;
+    &__header{
+        margin-bottom: 60px;
+        &_title{
+            color: $block-text-color;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 123%;
+        }
+
+        &_subtitle{
+            color: $block-text-color;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 175%;
+        }
+    }
+
+    &__footer{
+        &__wrap{
+            display: flex;
+            @include adaptive-value('gap', 20, 10);
+
+            @media screen and (max-width: 900px) {
+                overflow-x: scroll;
+            }
+        }
+        &-card{
+            width: 290px;
+            height: 330px;
+            border-radius: 40px;
+            @include adaptive-value('padding-top', 41, 30);
+            @include adaptive-value('padding-bottom', 41, 30);
+            @include adaptive-value('padding-left', 30, 20);
+            @include adaptive-value('padding-right', 30, 20);
+            background: url(/images/elemt-img1\ \(1\).png);
+            background-repeat: no-repeat;
+
+
+            &__title{
+                color: $block-text-color;
+                @include adaptive-value('font-size', 20, 10);
+                font-weight: 700;
+                line-height: 150%;
+                @include adaptive-value('margin-top', 10, 7);               
+                @include adaptive-value('margin-bottom', 25, 17);               
+            }
+
+            &__subtitle{
+                color: $block-text-color;
+                font-family: 'Montserrat', sans-serif;
+                @include adaptive-value('font-size', 14, 7);
+                font-weight: 500;
+                line-height: 185%;
+            }
+        }
+
+        &-card_one{
+            width: 290px;
+            height: 330px;
+            border-radius: 40px;
+            @include adaptive-value('padding-top', 41, 30);
+            @include adaptive-value('padding-bottom', 41, 30);
+            @include adaptive-value('padding-left', 30, 20);
+            @include adaptive-value('padding-right', 30, 20);
+            background: url(/images/elemt-img3\ \(3\).png);
+            background-repeat: no-repeat;
+
+
+            &__title{
+                color: $block-text-color;
+                @include adaptive-value('font-size', 20, 10);
+                font-weight: 700;
+                line-height: 150%;
+                @include adaptive-value('margin-bottom', 8, 5);               
+                               
+            }
+
+            &__subtitle{
+                color: $block-text-color;
+                font-family: 'Montserrat', sans-serif;
+                @include adaptive-value('font-size', 14, 7);
+                font-weight: 500;
+                line-height: 185%;
+            }
+        }
+
+        &-card_two{
+            width: 290px;
+            height: 330px;
+            border-radius: 40px;
+            @include adaptive-value('padding-top', 41, 30);
+            @include adaptive-value('padding-bottom', 41, 30);
+            @include adaptive-value('padding-left', 30, 20);
+            @include adaptive-value('padding-right', 30, 20);
+            background: url(/images/elemt-img2\ \(2\).png);
+            background-repeat: no-repeat;
+
+
+            &__title{
+                color: $block-text-color;
+                @include adaptive-value('font-size', 20, 10);
+                font-weight: 700;
+                line-height: 150%;
+                @include adaptive-value('margin-bottom', 8, 5);
+            }
+
+            &__subtitle{
+                color: $block-text-color;
+                font-family: 'Montserrat', sans-serif;
+                @include adaptive-value('font-size', 14, 7);
+                font-weight: 500;
+                line-height: 185%;
+            }
+        }
+
+        &-card_three{
+            width: 290px;
+            height: 330px;
+            border-radius: 40px;
+            @include adaptive-value('padding-top', 41, 30);
+            @include adaptive-value('padding-bottom', 41, 30);
+            @include adaptive-value('padding-left', 30, 20);
+            @include adaptive-value('padding-right', 30, 20);
+            background: url(/images/elemt-img4.png);
+            background-repeat: no-repeat;
+
+
+            &__title{
+                color: $block-text-color;
+                @include adaptive-value('font-size', 20, 10);
+                font-weight: 700;
+                line-height: 150%;
+                @include adaptive-value('margin-bottom', 25, 17);
+            }
+
+            &__subtitle{
+                color: $block-text-color;
+                font-family: 'Montserrat', sans-serif;
+                @include adaptive-value('font-size', 14, 7);
+                font-weight: 500;
+                line-height: 185%;
+            }
+        }
+    }
+}
+
+
+/* ELEMENT - END */
